@@ -3,8 +3,22 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-@layer components {
+@layer utilities {
   .container {
-    @apply mx-auto w-[1170px]!;
+    margin-inline: auto;
   }
+}
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 570px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 990px;
+  --breakpoint-xl: 1170px;
+}
+li.slick-active div {
+  @apply border-2 border-white bg-[#DB4444];
+}
+
+.category:hover category-icon {
+  color: white;
 }
